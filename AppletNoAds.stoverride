@@ -1,5 +1,5 @@
-#!name=微信小程序去广告
-#!desc=对自己常用的一些微信小程序实施去广告 2023.1.22 16:13 @ChangXiaoqiang
+name: 微信小程序去广告
+desc: 对自己常用的一些微信小程序实施去广告 2023.1.22 16:13 @ChangXiaoqiang
 
 http:
     mitm:
