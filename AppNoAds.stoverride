@@ -1,5 +1,5 @@
 name: App去广告
-desc: 对自己常用的一些App去掉广告，更新于2023.1.22 15:45 @ChangXiaoqiang
+desc: 对自己常用的一些App去掉广告，更新于2023.1.22 16:07 @ChangXiaoqiang
 
 http:
   mitm:
