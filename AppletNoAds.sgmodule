@@ -1,0 +1,65 @@
+#!name=微信小程序去广告
+#!desc=对自己常用的一些微信小程序实施去广告 2023.1.22 16:13 @ChangXiaoqiang
+
+http:
+    mitm:
+    - "static.wecity.qq.com" 
+    - "v.tuhu.org"
+    - "ucmp-static.sf-express.com" 
+    - "web.chelaile.net.cn" 
+    - "api.chelaile.net.cn" 
+    - "atrace.chelaile.net.cn" 
+    - "wxsnsdythumb.wxs.qq.com" 
+    - "resource.wesure100.com" 
+    - "bi-mall.meituan.com" 
+    - "inf-prdapi.wesure.cn" 
+    - "vectorsdk.map.qq.com" 
+    - "ct-bucket.oss-cn-shenzhen.aliyuncs.com" 
+    - "qnimg.zowoyoo.com" 
+    - "resource.wesure100.com" 
+    - "ump.ems.com.cn" 
+    - "wxa.wxs.qq.com" 
+    - "sdk.e.qq.com" 
+    - "yun-hl.3g.qq.com" 
+    - "ipv4.gdt.qq.com"
+
+    url-rewrite:
+    # > 微信小程序开屏广告
+    - ^https?:\/\/wxsnsdythumb\.wxs\.qq\.com\/141\/20204\/snscosdownload\/SZ\/reserved\/ - reject
+    - ^https?:\/\/wxsnsdythumb\.wxs\.qq\.com\/131\/20204\/snssvpdownload\/ - reject
+
+    # > 车来了
+    - ^https?:\/\/ipv4\.gdt\.qq\.com\/ - reject
+    - ^https?:\/\/yun-hl\.3g\.qq\.com\/ - reject
+    - ^https?:\/\/wxa\.wxs\.qq\.com\/images\/wxapp\/ - reject
+    - ^https?:\/\/sdk\.e\.qq\.com\/ - reject
+    - ^https?:\/\/atrace\.chelaile\.net\.cn\/ - reject
+    - ^https?:\/\/api\.chelaile\.net\.cn\/adpub\/wxAdTask\/ - reject
+    - ^https?:\/\/web\.chelaile\.net\.cn\/api\/adpub\/ - reject
+
+    # > EMS中国邮政速递物流
+    - ^https?:\/\/ump\.ems\.com\.cn\/mailAd\/pageModuleImg\/157b2fd52d884472bd5010db078fc2dc.png - reject
+
+    # > 顺丰速运
+    - ^https?:\/\/ucmp-static\.sf-express\.com\/sfoss\/ad-act\/infoflow\/B7C0E1A810CC47D1BF9ECFE3B702E8B0.png - reject
+
+    # > 途虎养车
+    - ^https?:\/\/v\.tuhu\.org\/image\/WNKfxJHtPefKR6tFCB15LQ_w210_h210.gif - reject
+
+    # > 腾讯微保
+    - ^https?:\/\/resource\.wesure100\.com\/AT-Config\/config\/*.gif - reject
+    - ^https?:\/\/resource\.wesure100\.com\/front\/prd\/image\/add_tip_unpay.png - reject
+    - ^https?:\/\/inf-prdapi\.wesure\.cn\/prdapp\/api\/config-service\/QueryConfig\/ - reject
+    - ^https?:\/\/resource\.wesure100\.com\/AT-Config\/config\/*.gif - reject
+
+    # > 腾讯健康
+    - ^https?:\/\/static\.wecity\.qq\.com\/tencent-health-miniindex-v1\/icon-noticebar-26385bc67e5c5961b3bf608872e6496e.png - reject
+    - ^https?:\/\/static\.wecity\.qq\.com\/thop-client\/static\/702x244*.png - reject
+
+    # > 畅停e行
+    - ^http?:\/\/qnimg\.zowoyoo\.com\/img\/ - reject
+    - ^https?:\/\/vectorsdk\.map\.qq\.com\/ - reject
+    - ^https?:\/\/ct-bucket\.oss-cn-shenzhen\.aliyuncs\.com\/platform\/pic\/advertising\/*.png - reject
+
+    # > 美团
+    - ^https?:\/\/bi-mall\.meituan\.com\/mp\/check\/img.gif? - reject
