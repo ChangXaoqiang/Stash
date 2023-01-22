@@ -108,7 +108,7 @@ http:
     - ^https?:\/\/map-mobile-opnimg\.cdn\.bcebos\.com\/*.png - REJECT
     - ^https?:\/\/nsclick\.baidu\.com\/ - REJECT
     - ^https?:\/\/map-mobile-resource\.cdn\.bcebos\.com\/icon\/service\/trip-helper\/default\/chunJieBanner.png - REJECT
-    - ^https?:\/\/cjh-amis\.cdn\.bcebos\.com\/2023-1\/1673417414557\/poi%20banner%20%403x%20%E6%8B%B7%E8%B4%9D.jpg - REJECTz
+    - ^https?:\/\/cjh-amis\.cdn\.bcebos\.com\/2023-1\/1673417414557\/poi%20banner%20%403x%20%E6%8B%B7%E8%B4%9D.jpg - REJECT
     - ^https?:\/\/map-mobile-resource\.cdn\.bcebos\.com\/icon\/service\/periphery\/default\/*.gif - REJECT
     - ^https?:\/\/map-mobile-opnimg\.cdn\.bcebos\.com\/65c7b37f791beb6b154899870033bc71.png - REJECT
 
@@ -136,5 +136,3 @@ http:
     12306.js:
     url: https://github.com/ddgksf2013/Scripts/raw/master/12306.js
     interval: 86400
-
-
