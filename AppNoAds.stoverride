@@ -57,13 +57,11 @@ http:
   - "pgdt.ugdtimg.com"
   - "iflyad.bj.openstroage.cn"
   - "mp.weixin.qq.com"
-  - "res.app.coc.10086.cn"
-  - "jiguang.coc.10086.cn"
+  - "client.app.coc.10086.cn"
 
   url-rewrite:
-    # 中国移动 app
-    - ^https?:\/\/res\.app\.coc\.10086\.cn\/res\/cdn\/coc1\/ - REJECT
-    - ^https?:\/\/jiguang\.coc\.10086\.cn\/ - REJECT
+    # 中国移动开屏
+    - ^https?:\/\/client\.app\.coc\.10086\.cn\/biz-orange\/DN\/(init\/startInit|emotionMarket) - reject
 
     #去除微信朋友圈广告
     - ^https?:\/\/mp\.weixin\.qq\.com\/ - REJECT
