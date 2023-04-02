@@ -1,5 +1,5 @@
 name: App去广告
-desc: 对自己常用的一些App去掉广告 @ChangXiaoqiang
+desc: 对自己常用的一些App去掉广告 202304022250 @ChangXiaoqiang
 
 http:
   mitm:
@@ -53,29 +53,39 @@ http:
   - "sns.amap.com"
   - "weibo.cn"
   - "weibo.com"
+  - "p3-be-pack-sign.pglstatp-toutiao.com"
+  - "pgdt.ugdtimg.com"
+  - "iflyad.bj.openstroage.cn"
 
   url-rewrite:
+    #去除嘀嗒出行开屏广告
+    - ^https?:\/\/iflyad\.bj\.openstroage\.cn\/ - REJECT
+
+    # 去除 CSDN 客户端广告
+    - ^https?:\/\/p3-be-pack-sign\.pglstatp-toutiao\.com\/ - REJECT
+    - ^https?:\/\/pgdt\.ugdtimg\.com\/ - REJECT
+
     # 去除微博 App 的广告请求
     - ^https?:\/\/.*\.weibo\.c(?:n|om)\/(?!oauth2).+?(wb492923|promotion|sdk\/log|cardlist|wbpullad|pull\?uid).*$ - REJECT
     
-    # > 360手机卫士
+    # 360手机卫士
     - ^https?:\/\/huodong\.ios\.shouji\.360\.cn\/v4\/ - REJECT
     - ^http?:\/\/p9-be-pack-sign\.pglstatp-toutiao\.com\/tos-cn-p-0051\/ - REJECT
     - ^https?:\/\/pgdt\.ugdtimg\.com\/141\/20204\/snscosdownload\/SZ\/reserved\/ - REJECT
     - ^http?:\/\/p26-be-pack-sign\.pglstatp-toutiao\.com\/web\.business\.image\/ - REJECT
 
-    # > IT之家
+    # IT之家
     - ^https?:\/\/api\.zuihuimai\.com\/static\/s11\/2022-nhj\/ - REJECT
     - ^https?:\/\/img\.alicdn\.com\/ - REJECT
     - ^https?:\/\/gw\.alicdn\.com\/ - REJECT
     - ^https?:\/\/www\.ithome\.com\/0\/ - REJECT
     - ^https?:\/\/img\.ithome\.com\/newsuploadfiles/*/*/*?x-bce-process=image\/format\/ - REJECT
 
-    # > CamHipro
+    # CamHipro
     - ^https?:\/\/p9-be-pack-sign\.pglstatp-toutiao\.com\/ - REJECT
     - ^https?:\/\/p3-be-pack-sign\.pglstatp-toutiao\.com\/ - REJECT
 
-    # > QQ空间/QQ
+    # QQ空间/QQ
     - ^https?:\/\/h\.trace\.qq\.com\/ - REJECT
     - ^https?:\/\/heic\.alicdn\.com\/ - REJECT
     - ^https?:\/\/xc\.gdt\.qq\.com\/ - REJECT
@@ -83,30 +93,30 @@ http:
     - ^https?:\/\/lpcdn\.pinduoduo\.com\/ - REJECT
     - ^https?:\/\/pgdt\.gtimg\.cn\/ - REJECT
 
-    # > 彩云天气
+    # 彩云天气
     - ^https?:\/\/cdn-w\.caiyunapp\.com\/ - REJECT
     - ^https?:\/\/ad\.caiyunapp\.com\/ - REJECT
 
-    # > 妈妈网孕育
+    # 妈妈网孕育
     - ^https?:\/\/sf3-fe-tos\.pglstatp-toutiao\.com\/obj\/ad-pattern\/ - REJECT
     - ^https?:\/\/cdn-act2\.cdnmama\.com\/ - REJECT
     - ^https?:\/\/pt-images*\.cdnmama\.com\/ - REJECT
     - ^https?:\/\/qimg\.cdnmama\.com\/ - REJECT
 
-    # > 美团外卖
+    # 美团外卖
     - ^https?:\/\/img\.meituan\.net\/bizad\/.*.jpg - REJECT
     - ^https?:\/\/wmapi\.meituan\.com\/api\/v7\/startpicture - REJECT
 
-    # > 饿了么
+    # 饿了么
     - ^https?:\/\/cube\.elemecdn\.com\/ - REJECT
 
-    # > 高德地图
+    # 高德地图
     - ^https?:\/\/m5.amap.com\/ws\/valueadded\/alimama\/ - REJECT
     - ^https?:\/\/optimus-ads\.amap\.com\/ - REJECT
     - ^https?:\/\/aid\.m\.taobao\.com\/ - REJECT
     - ^https?:\/\/optimus-ads\.amap\.com\/uploadimg\/d17bb44dde853569b03837b3cc091af6.gif - REJECT
 
-    # > 百度地图
+    # 百度地图
     - ^https?:\/\/hmma.baidu.com\/ - REJECT
     - ^https?:\/\/map-mobile-opnimg\.cdn\.bcebos\.com\/*.gif - REJECT
     - ^https?:\/\/dss0.bdstatic.com\/ - REJECT
@@ -117,17 +127,17 @@ http:
     - ^https?:\/\/map-mobile-resource\.cdn\.bcebos\.com\/icon\/service\/periphery\/default\/*.gif - REJECT
     - ^https?:\/\/map-mobile-opnimg\.cdn\.bcebos\.com\/65c7b37f791beb6b154899870033bc71.png - REJECT
 
-    # > 12306
+    # 12306
     - ^https?:\/\/ad\.12306\.cn\/res\/adfiles\/\/delivery\/ - REJECT
     - ^https?:\/\/ad\.12306\.cn\/ad\/ser\/ - REJECT
 
-    # > 去哪网
+    # 去哪网
     - ^https:\/\/qde\.qunar\.com\/preload - REJECT
 
-    # > 飞猪旅行
+    # 飞猪旅行
     - ^https:\/\/acs\.m\.taobao\.com\/gw\/mtop\.fliggy\.crm\.screen\.allresource\/ - REJECT
 
-    # > 菜鸟裹裹
+    # 菜鸟裹裹
     - ^https?:\/\/ilce\.alicdn\.com\/minolta\/374884\/0\/ - REJECT
 
   Script:
