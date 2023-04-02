@@ -1,5 +1,5 @@
 name: App去广告
-desc: 对自己常用的一些App去掉广告 202304022250 @ChangXiaoqiang
+desc: 对自己常用的一些App去掉广告 202304022317 @ChangXiaoqiang
 
 http:
   mitm:
@@ -56,8 +56,18 @@ http:
   - "p3-be-pack-sign.pglstatp-toutiao.com"
   - "pgdt.ugdtimg.com"
   - "iflyad.bj.openstroage.cn"
+  - "mp.weixin.qq.com"
+  - "res.app.coc.10086.cn"
+  - "jiguang.coc.10086.cn"
 
   url-rewrite:
+    # 中国移动 app
+    - ^https?:\/\/res\.app\.coc\.10086\.cn\/res\/cdn\/coc1\/ - REJECT
+    - ^https?:\/\/jiguang\.coc\.10086\.cn\/ - REJECT
+
+    #去除微信朋友圈广告
+    - ^https?:\/\/mp\.weixin\.qq\.com\/ - REJECT
+
     #去除嘀嗒出行开屏广告
     - ^https?:\/\/iflyad\.bj\.openstroage\.cn\/ - REJECT
 
