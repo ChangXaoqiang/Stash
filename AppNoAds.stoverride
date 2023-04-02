@@ -1,5 +1,5 @@
 name: App去广告
-desc: 对自己常用的一些App去掉广告 202304022317 @ChangXiaoqiang
+desc: 对自己常用的一些App去掉广告@ChangXiaoqiang
 
 http:
   mitm:
@@ -58,8 +58,14 @@ http:
   - "iflyad.bj.openstroage.cn"
   - "mp.weixin.qq.com"
   - "client.app.coc.10086.cn"
+  - "cloud.189.cn"
+  - "zt-app.go189.cn"
 
   url-rewrite:
+    # 中国电信去广告
+    - ^https?:\/\/cloud\.189\.cn\/include\/splash\/ -reject
+    - ^https?:\/\/zt-app\.go189\.cn\/zt-app\/welcome\/.*?Animation - reject
+    
     # 中国移动开屏
     - ^https?:\/\/client\.app\.coc\.10086\.cn\/biz-orange\/DN\/(init\/startInit|emotionMarket) - reject
 
