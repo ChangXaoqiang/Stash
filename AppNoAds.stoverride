@@ -51,8 +51,13 @@ http:
   - "wmapi.meituan.com" 
   - "m5.amap.com"
   - "sns.amap.com"
+  - "weibo.cn"
+  - "weibo.com"
 
   url-rewrite:
+    # 去除微博 App 的广告请求
+    - ^https?:\/\/.*\.weibo\.c(?:n|om)\/(?!oauth2).+?(wb492923|promotion|sdk\/log|cardlist|wbpullad|pull\?uid).*$ - REJECT
+    
     # > 360手机卫士
     - ^https?:\/\/huodong\.ios\.shouji\.360\.cn\/v4\/ - REJECT
     - ^http?:\/\/p9-be-pack-sign\.pglstatp-toutiao\.com\/tos-cn-p-0051\/ - REJECT
