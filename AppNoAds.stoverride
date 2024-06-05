@@ -3,168 +3,84 @@ desc: 对一些常用的App去广告 [2024-06-06]
 
 http:
   mitm:
-  - "p26-be-pack-sign.pglstatp-toutiao.com"
-  - "pgdt.ugdtimg.com"
-  - "huodong.ios.shouji.360.cn" 
-  - "nsclick.baidu.com" 
-  - "hmma.baidu.com" 
-  - "ilce.alicdn.com" 
-  - "carowner-default.cdn.bcebos.com" 
-  - "carowner.baidu.com" 
-  - "mapcarowner-gz.cdn.bcebos.com" 
-  - "www.ithome.com" 
-  - "gw.alicdn.com" 
-  - "img.alicdn.com" 
-  - "img.ithome.com" 
-  - "p3-be-pack-sign.pglstatp-toutiao.com" 
-  - "p9-be-pack-sign.pglstatp-toutiao.com" 
-  - "h.trace.qq.com" 
-  - "heic.alicdn.com" 
-  - "xc.gdt.qq.com" 
-  - "lp.pinduoduo.com" 
-  - "lpcdn.pinduoduo.com" 
-  - "pgdt.gtimg.cn" 
-  - "kepler.jd.com" 
-  - "adashxgc.ut.taobao.com" 
-  - "api.zuihuimai.com" 
-  - "cdn-w.caiyunapp.com" 
-  - "ad.caiyunapp.com" 
-  - "sf3-fe-tos.pglstatp-toutiao.com" 
-  - "cdn-act2.cdnmama.com" 
-  - "pt-images*.cdnmama.com" 
-  - "qimg.cdnmama.com" 
-  - "dig.lianjia.com" 
-  - "acs.m.taobao.com" 
-  - "qde.qunar.com" 
-  - "apps.api.ke.com" 
-  - "cube.elemecdn.com" 
-  - "cache.amap.com" 
-  - "g.cn.miaozhen.com" 
-  - "ad.12306.cn" 
-  - "map-mobile-opnimg.cdn.bcebos.com" 
-  - "dss0.bdstatic.com" 
-  - "cjh-amis.cdn.bcebos.com" 
-  - "map-mobile-resources.cdn.bcebos.com" 
-  - "aid.m.taobao.com" 
-  - "optimus-ads.amap.com" 
-  - "img.meituan.net"
-  - "wmapi.meituan.com" 
-  - "m5.amap.com"
-  - "sns.amap.com"
-  - "weibo.cn"
-  - "weibo.com"
-  - "p3-be-pack-sign.pglstatp-toutiao.com"
-  - "pgdt.ugdtimg.com"
-  - "iflyad.bj.openstroage.cn"
-  - "mp.weixin.qq.com"
-  - "client.app.coc.10086.cn"
-  - "cloud.189.cn"
-  - "zt-app.go189.cn"
-  - "umeng.com"
-  - "xlog.jd.com"
-  - "e.kuaishou.cn"
-  - "adkwai.com"
-  - "adukwai.com"
-  - "cmt.comp.360os.com"
-  - "mobads-pre-config.cdn.bcebos.com"
-  - "mobads-logs.baidu.com"
-  - "api-access.pangolin-sdk-toutiao1.com"
-  - "images.pinduoduo.com"
-  - "gdfp.gifshow.com"
+  - p26-be-pack-sign.pglstatp-toutiao.com
+  - pgdt.ugdtimg.com
+  - huodong.ios.shouji.360.cn 
+  - nsclick.baidu.com 
+  - hmma.baidu.com 
+  - ilce.alicdn.com 
+  - carowner-default.cdn.bcebos.com 
+  - carowner.baidu.com 
+  - mapcarowner-gz.cdn.bcebos.com 
+  - www.ithome.com 
+  - gw.alicdn.com 
+  - img.alicdn.com 
+  - img.ithome.com 
+  - p3-be-pack-sign.pglstatp-toutiao.com 
+  - p9-be-pack-sign.pglstatp-toutiao.com 
+  - h.trace.qq.com 
+  - heic.alicdn.com 
+  - xc.gdt.qq.com 
+  - lp.pinduoduo.com 
+  - lpcdn.pinduoduo.com 
+  - pgdt.gtimg.cn 
+  - kepler.jd.com 
+  - adashxgc.ut.taobao.com 
+  - api.zuihuimai.com 
+  - cdn-w.caiyunapp.com 
+  - ad.caiyunapp.com 
+  - sf3-fe-tos.pglstatp-toutiao.com 
+  - cdn-act2.cdnmama.com 
+  - pt-images*.cdnmama.com 
+  - qimg.cdnmama.com 
+  - dig.lianjia.com 
+  - acs.m.taobao.com 
+  - qde.qunar.com 
+  - apps.api.ke.com 
+  - cube.elemecdn.com 
+  - cache.amap.com 
+  - g.cn.miaozhen.com 
+  - ad.12306.cn:*
+  - map-mobile-opnimg.cdn.bcebos.com 
+  - dss0.bdstatic.com 
+  - cjh-amis.cdn.bcebos.com 
+  - map-mobile-resources.cdn.bcebos.com 
+  - aid.m.taobao.com 
+  - optimus-ads.amap.com 
+  - img.meituan.net
+  - wmapi.meituan.com 
+  - m5.amap.com
+  - sns.amap.com
+  - '*.weibo.cn'
+  - '*.weibo.com'
+  - '*.pglstatp-toutiao.com'
+  - pgdt.ugdtimg.com
+  - iflyad.bj.openstroage.cn
+  - mp.weixin.qq.com
+  - client.app.coc.10086.cn
+  - cloud.189.cn
+  - zt-app.go189.cn
+  - '*.umeng.com'
+  - xlog.jd.com
+  - '*.e.kuaishou.cn'
+  - '*.adkwai.com'
+  - '*.adukwai.com'
+  - '*.cmt.comp.360os.com'
+  - mobads-pre-config.cdn.bcebos.com
+  - mobads-logs.baidu.com
+  - api-access.pangolin-sdk-toutiao1.com
+  - images.pinduoduo.com
+  - gdfp.gifshow.com
 
 
   url-rewrite:
     # CamHipro
-    - ^https?:\/\/mobads-pre-config\.cdn\.bcebos\.com\/ - REJECT
-    - ^https?:\/\/gdfp\.gifshow\.com\/ - REJECT
-    - ^https?:\/\/mobads-logs\.baidu\.com\/ - REJECT
-    - ^https?:\/\/api-access\.pangolin-sdk-toutiao1\.com\/api\/ad\/union\/sdk\/stats\/batch\/ - REJECT
-    - ^https?:\/\/images\.pinduoduo\.com\/ - REJECT
-
-    # 中国移动开屏
-    - ^https?:\/\/client\.app\.coc\.10086\.cn\/biz-orange\/DN\/(init\/startInit|emotionMarket) - reject
-
-    #去除微信朋友圈广告
-    - ^https?:\/\/mp\.weixin\.qq\.com\/ - REJECT
-
-    #去除嘀嗒出行开屏广告
-    - ^https?:\/\/iflyad\.bj\.openstroage\.cn\/ - REJECT
-
-    # 去除 CSDN 客户端广告
-    - ^https?:\/\/p3-be-pack-sign\.pglstatp-toutiao\.com\/ - REJECT
-    - ^https?:\/\/pgdt\.ugdtimg\.com\/ - REJECT
-
-    # 去除微博 App 的广告请求
-    - ^https?:\/\/.*\.weibo\.c(?:n|om)\/(?!oauth2).+?(wb492923|promotion|sdk\/log|cardlist|wbpullad|pull\?uid).*$ - REJECT
-    
-    # 360手机卫士
-    - ^https?:\/\/huodong\.ios\.shouji\.360\.cn\/v4\/ - REJECT
-    - ^http?:\/\/p9-be-pack-sign\.pglstatp-toutiao\.com\/tos-cn-p-0051\/ - REJECT
-    - ^https?:\/\/pgdt\.ugdtimg\.com\/141\/20204\/snscosdownload\/SZ\/reserved\/ - REJECT
-    - ^http?:\/\/p26-be-pack-sign\.pglstatp-toutiao\.com\/web\.business\.image\/ - REJECT
-
-    # IT之家
-    - ^https?:\/\/api\.zuihuimai\.com\/static\/s11\/2022-nhj\/ - REJECT
-    - ^https?:\/\/img\.alicdn\.com\/ - REJECT
-    - ^https?:\/\/gw\.alicdn\.com\/ - REJECT
-    - ^https?:\/\/www\.ithome\.com\/0\/ - REJECT
-    - ^https?:\/\/img\.ithome\.com\/newsuploadfiles/*/*/*?x-bce-process=image\/format\/ - REJECT
-
-    # CamHipro
-    - ^https?:\/\/p9-be-pack-sign\.pglstatp-toutiao\.com\/ - REJECT
-    - ^https?:\/\/p3-be-pack-sign\.pglstatp-toutiao\.com\/ - REJECT
-
-    # QQ空间/QQ
-    - ^https?:\/\/h\.trace\.qq\.com\/ - REJECT
-    - ^https?:\/\/heic\.alicdn\.com\/ - REJECT
-    - ^https?:\/\/xc\.gdt\.qq\.com\/ - REJECT
-    - ^https?:\/\/lp\.pinduoduo\.com\/ - REJECT
-    - ^https?:\/\/lpcdn\.pinduoduo\.com\/ - REJECT
-    - ^https?:\/\/pgdt\.gtimg\.cn\/ - REJECT
-
-    # 彩云天气
-    - ^https?:\/\/cdn-w\.caiyunapp\.com\/ - REJECT
-    - ^https?:\/\/ad\.caiyunapp\.com\/ - REJECT
-
-    # 妈妈网孕育
-    - ^https?:\/\/sf3-fe-tos\.pglstatp-toutiao\.com\/obj\/ad-pattern\/ - REJECT
-    - ^https?:\/\/cdn-act2\.cdnmama\.com\/ - REJECT
-    - ^https?:\/\/pt-images*\.cdnmama\.com\/ - REJECT
-    - ^https?:\/\/qimg\.cdnmama\.com\/ - REJECT
-
-    # 美团外卖
-    - ^https?:\/\/img\.meituan\.net\/bizad\/.*.jpg - REJECT
-    - ^https?:\/\/wmapi\.meituan\.com\/api\/v7\/startpicture - REJECT
-
-    # 饿了么
-    - ^https?:\/\/cube\.elemecdn\.com\/ - REJECT
-
-    # 高德地图
-    - ^https?:\/\/m5.amap.com\/ws\/valueadded\/alimama\/ - REJECT
-    - ^https?:\/\/optimus-ads\.amap\.com\/ - REJECT
-    - ^https?:\/\/aid\.m\.taobao\.com\/ - REJECT
-    - ^https?:\/\/optimus-ads\.amap\.com\/uploadimg\/d17bb44dde853569b03837b3cc091af6.gif - REJECT
-
-    # 百度地图
-    - ^https?:\/\/hmma.baidu.com\/ - REJECT
-    - ^https?:\/\/map-mobile-opnimg\.cdn\.bcebos\.com\/*.gif - REJECT
-    - ^https?:\/\/dss0.bdstatic.com\/ - REJECT
-    - ^https?:\/\/map-mobile-opnimg\.cdn\.bcebos\.com\/*.png - REJECT
-    - ^https?:\/\/nsclick\.baidu\.com\/ - REJECT
-    - ^https?:\/\/map-mobile-resource\.cdn\.bcebos\.com\/icon\/service\/trip-helper\/default\/chunJieBanner.png - REJECT
-    - ^https?:\/\/cjh-amis\.cdn\.bcebos\.com\/2023-1\/1673417414557\/poi%20banner%20%403x%20%E6%8B%B7%E8%B4%9D.jpg - REJECT
-    - ^https?:\/\/map-mobile-resource\.cdn\.bcebos\.com\/icon\/service\/periphery\/default\/*.gif - REJECT
-    - ^https?:\/\/map-mobile-opnimg\.cdn\.bcebos\.com\/65c7b37f791beb6b154899870033bc71.png - REJECT
+    - https?:\/\/mobads-pre-config\.cdn\.bcebos\.com\/ https://mobads-pre-config.cdn.bcebos.com reject
+    - https?:\/\/gdfp\.gifshow\.com\/ https://gdfp.gifshow.com reject
+    - https?:\/\/mobads-logs\.baidu\.com\/ https://mobads-logs.baidu.com reject
+    - https?:\/\/api-access\.pangolin-sdk-toutiao1\.com\/api\/ad\/ https://api-access.pangolin-sdk-toutiao1.com/api/ad reject
+    - https?:\/\/images\.pinduoduo\.com\/ https://images.pinduoduo.com reject
 
     # 12306
-    - ^https?:\/\/ad\.12306\.cn\/res\/adfiles\/\/delivery\/ - REJECT
-    - ^https?:\/\/ad\.12306\.cn\/ad\/ser\/ - REJECT
+    - https?:\/\/ad\.12306\.cn\/ https://ad.12306.cn reject
 
-    # 去哪网
-    - ^https:\/\/qde\.qunar\.com\/preload - REJECT
-
-    # 飞猪旅行
-    - ^https:\/\/acs\.m\.taobao\.com\/gw\/mtop\.fliggy\.crm\.screen\.allresource\/ - REJECT
-
-    # 菜鸟裹裹
-    - ^https?:\/\/ilce\.alicdn\.com\/minolta\/374884\/0\/ - REJECT
