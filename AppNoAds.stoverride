@@ -60,8 +60,27 @@ http:
   - "client.app.coc.10086.cn"
   - "cloud.189.cn"
   - "zt-app.go189.cn"
+  - "umeng.com"
+  - "xlog.jd.com"
+  - "e.kuaishou.cn"
+  - "adkwai.com"
+  - "adukwai.com"
+  - "cmt.comp.360os.com"
+  - "mobads-pre-config.cdn.bcebos.com"
+  - "mobads-logs.baidu.com"
+  - "api-access.pangolin-sdk-toutiao1.com"
+  - "images.pinduoduo.com"
+  - "gdfp.gifshow.com"
+
 
   url-rewrite:
+    # CamHipro
+    - ^https?:\/\/mobads-pre-config\.cdn\.bcebos\.com\/ - REJECT
+    - ^https?:\/\/gdfp\.gifshow\.com\/ - REJECT
+    - ^https?:\/\/mobads-logs\.baidu\.com\/ - REJECT
+    - ^https?:\/\/api-access\.pangolin-sdk-toutiao1\.com\/api\/ad\/union\/sdk\/stats\/batch\/ - REJECT
+    - ^https?:\/\/images\.pinduoduo\.com\/ - REJECT
+
     # 中国移动开屏
     - ^https?:\/\/client\.app\.coc\.10086\.cn\/biz-orange\/DN\/(init\/startInit|emotionMarket) - reject
 
