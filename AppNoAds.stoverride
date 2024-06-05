@@ -1,5 +1,5 @@
-name: App去广告
-desc: 对自己常用的一些App去掉广告@ChangXiaoqiang
+name: App去广告[自用]
+desc: 对一些常用的App去广告 [2024-06-06]
 
 http:
   mitm:
@@ -168,15 +168,3 @@ http:
 
     # 菜鸟裹裹
     - ^https?:\/\/ilce\.alicdn\.com\/minolta\/374884\/0\/ - REJECT
-
-  Script:
-    - match: ^https?:\/\/ad\.12306\.cn\/ad\/ser\/getAdList
-    - name: 12306.js
-    - type: response
-    - requires-body: true
-    - timeout: 10
-    - interval: 0
-  script-providers:
-    12306.js:
-    url: https://github.com/ddgksf2013/Scripts/raw/master/12306.js
-    interval: 86400
