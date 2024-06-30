@@ -1,6 +1,7 @@
 name: CamHipro 净化
 desc: 最后更新时间：2024-07-01 02:30
 icon: https://play-lh.googleusercontent.com/rvyt5BvmYV-uUPdlYNsy58F-4Ubmaw6xJ9Ys9QSiGj06H9GkciiHe3K3_8iMyhbRDQ=w480-h960-rw
+category: "NoAd"
 
 http:
   force-http-engine:
