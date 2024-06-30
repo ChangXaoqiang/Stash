@@ -12,6 +12,8 @@ http:
     - mktm.jd.com
     - lapin365.com
     - adashbc.ut.taobao.com
+    - 360buyimg.com
+    - mobads-pre-config.cdn.bcebos.com
 
   url-rewrite:
     - https?:\/\/mon\.zijieapi\.com\/ https://mon.zijieapi.com/ reject
@@ -21,3 +23,5 @@ http:
     - https?:\/\/mktm\.jd\.com\/ https://mktm.jd.com/ reject
     - https?:\/\/lapin365\.com\/ https://img.lapin365.com/zuihuimai/static/s11/2024-618/tb1.png reject
     - https?:\/\/adashbc\.ut\.taobao\.com\/ https://adashbc.ut.taobao.com/ reject
+    - https?:\/\/.+\.360buyimg\.com\/ https://*.360buyimg.com/ reject
+    - https?:\/\/mobads-pre-config\.cdn\.bcebos\.com\/ https://mobads-pre-config.cdn.bcebos.com/ reject
