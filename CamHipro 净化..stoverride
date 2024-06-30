@@ -1,27 +1,27 @@
 name: CamHipro 净化
-desc: 最后更新时间：2024-07-01 02:30
+desc: 最后更新时间：2024-07-01 03:18
 icon: https://play-lh.googleusercontent.com/rvyt5BvmYV-uUPdlYNsy58F-4Ubmaw6xJ9Ys9QSiGj06H9GkciiHe3K3_8iMyhbRDQ=w480-h960-rw
 category: "NoAd"
 
 http:
-  force-http-engine:
-    - mon.zijieapi.com
-    - mobads-logs.baidu.com
-    - e.kuaishou.cn
-    - adukwai.com
-    - mktm.jd.com
-    - lapin365.com
-    - adashbc.ut.taobao.com
-    - 360buyimg.com
-    - mobads-pre-config.cdn.bcebos.com
+  mitm:
+    - "mon.zijieapi.com"
+    - "mobads-logs.baidu.com"
+    - "open.e.kuaishou.cn"
+    - "adukwai.com"
+    - "mktm.jd.com"
+    - "lapin365.com"
+    - "adashbc.ut.taobao.com"
+    - "360buyimg.com"
+    - "mobads-pre-config.cdn.bcebos.com"
 
   url-rewrite:
-    - https?:\/\/mon\.zijieapi\.com\/ https://mon.zijieapi.com/ reject
-    - https?:\/\/mobads-logs\.baidu\.com\/ https://mobads-logs.baidu.com/ reject
-    - https?:\/\/e\.kuaishou\.cn\/ https://open.e.kuaishou.cn/ reject
-    - https?:\/\/adukwai\.com\/ https://p2-lm.adukwai.com/ reject
-    - https?:\/\/mktm\.jd\.com\/ https://mktm.jd.com/ reject
-    - https?:\/\/lapin365\.com\/ https://img.lapin365.com/zuihuimai/static/s11/2024-618/tb1.png reject
-    - https?:\/\/adashbc\.ut\.taobao\.com\/ https://adashbc.ut.taobao.com/ reject
-    - https?:\/\/.+\.360buyimg\.com\/ https://*.360buyimg.com/ reject
-    - https?:\/\/mobads-pre-config\.cdn\.bcebos\.com\/ https://mobads-pre-config.cdn.bcebos.com/ reject
+    - ^https?:\/\/mon\.zijieapi\.com\/ - reject
+    - ^https?:\/\/mobads-logs\.baidu\.com\/ - reject
+    - ^https?:\/\/open\.e\.kuaishou\.cn\/ - reject
+    - ^https?:\/\/.+\adukwai\.com\/ - reject
+    - ^https?:\/\/mktm\.jd\.com\/ - reject
+    - ^https?:\/\/.+\.lapin365\.com\/ - reject
+    - ^https?:\/\/adashbc\.ut\.taobao\.com\/ - reject
+    - ^https?:\/\/.+\.360buyimg\.com\/ - reject
+    - ^https?:\/\/mobads-pre-config\.cdn\.bcebos\.com\/ - reject
