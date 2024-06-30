@@ -1,18 +1,22 @@
 name: CamHipro 净化
-desc: 最后更新时间：2024-06-06 01:57
+desc: 最后更新时间：2024-07-01 02:30
 icon: https://play-lh.googleusercontent.com/rvyt5BvmYV-uUPdlYNsy58F-4Ubmaw6xJ9Ys9QSiGj06H9GkciiHe3K3_8iMyhbRDQ=w480-h960-rw
 
 http:
   force-http-engine:
-    - images.pinduoduo.com
-    - mobads-pre-config.cdn.bcebos.com
+    - mon.zijieapi.com
     - mobads-logs.baidu.com
-    - api-access.pangolin-sdk-toutiao1.com
-    - gdfp.gifshow.com
+    - e.kuaishou.cn
+    - adukwai.com
+    - mktm.jd.com
+    - lapin365.com
+    - adashbc.ut.taobao.com
 
   url-rewrite:
-    - https?:\/\/images\.pinduoduo\.com\/ https://images.pinduoduo.com/ reject
-    - https?:\/\/mobads-pre-config\.cdn\.bcebos\.com\/ https://mobads-pre-config.cdn.bcebos.com/ reject
+    - https?:\/\/mon\.zijieapi\.com\/ https://mon.zijieapi.com/ reject
     - https?:\/\/mobads-logs\.baidu\.com\/ https://mobads-logs.baidu.com/ reject
-    - https?:\/\/api-access\.pangolin-sdk-toutiao1\.com\/api\/ad\/ https://api-access.pangolin-sdk-toutiao1.com/api/ad/ reject
-    - https?:\/\/gdfp\.gifshow\.com\/ https://gdfp.gifshow.com/ reject
+    - https?:\/\/e\.kuaishou\.cn\/ https://open.e.kuaishou.cn/ reject
+    - https?:\/\/adukwai\.com\/ https://p2-lm.adukwai.com/ reject
+    - https?:\/\/mktm\.jd\.com\/ https://mktm.jd.com/ reject
+    - https?:\/\/lapin365\.com\/ https://img.lapin365.com/zuihuimai/static/s11/2024-618/tb1.png reject
+    - https?:\/\/adashbc\.ut\.taobao\.com\/ https://adashbc.ut.taobao.com/ reject
