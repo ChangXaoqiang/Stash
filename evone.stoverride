@@ -1,13 +1,42 @@
 name: e充电 净化
-desc: 最后更新时间：2024-07-28 01:15
+desc: 最后更新时间：2024-07-28 05:07
 icon: https://pp.myapp.com/ma_icon/0/icon_42284428_1720767893/256
 category: "NoAd"
 
 http:
   mitm:
     - "api-evone.echargenet.com"
-    - "api-evone.echargenet.com"
+    - "cdn-evone-oss.echargenet.com"
+    - "dfp.cmft.com.cn"
+    - "hm.baidu.com"
+    - "w.weure.cn"
+    - "api.zysdsk.cn"
+    - "jf.yihaoxing888.com"
+    - "applite-evone-wx.echargenet.com"
+    - "yxyylog.echargenet.com"
+    - "res.wx.qq.com"
+    - "h5-api.feiersmart.com"
+    - "xiaochengxu-images-source.feiersmart.com"
+    - "h5-virtual.feiersmart.com"
+
 
   url-rewrite:
     - ^https?:\/\/api-evone\.echargenet\.com\/gw\/evone\.echargeapi\.open\.ad\.getadmaterials\/ - reject
     - ^https?:\/\/api-evone\.echargenet\.com\/gw\/evone\.echargeapi\.open\.ad\.usermaterialsclick\/ - reject
+    - ^https?:\/\/api-evone\.echargenet\.com\/gw\/evone\.h5gateway\.internal\.registeractivity\.querybyareaid\/ - reject
+    - ^https?:\/\/api-evone\.echargenet\.com\/gw\/evone\.h5gateway\.evoneopenauth\.internal\.queryactivity\/ - reject
+    - ^https?:\/\/api-evone\.echargenet\.com\/gw\/evone\.h5gateway\.integral\.plus\.queryplusactivitylist\/ - reject
+    - ^https?:\/\/api-evone\.echargenet\.com\/gw\/evone\.appsns\.open\.merchant\.activity\.pagelistapp\/ - reject
+    - ^https?:\/\/cdn-evone-oss\.echargenet\.com\/ - reject
+    - ^https?:\/\/dfp\.cmft\.com\.cn\/ - reject
+    - ^https?:\/\/hm\.baidu\.com\/ - reject
+    - ^https?:\/\/api-evone\.echargenet\.com\/gw\/evone\.h5gateway\.integral\.usersign\.getsignactivityinfo\/ - reject
+    - ^https?:\/\/w\.weure\.cn\/ - reject
+    - ^https?:\/\/api\.zysdsk\.cn\/ - reject
+    - ^https?:\/\/jf\.yihaoxing888\.com\/ - reject
+    - ^https?:\/\/applite-evone-wx\.echargenet\.com\/ - reject
+    - ^https?:\/\/yxyylog\.echargenet\.com\/ - reject
+    - ^https?:\/\/res\.wx\.qq\.com\/open\/js\/ - reject
+    - ^https?:\/\/h5-api\.feiersmart\.com\/ - reject
+    - ^https?:\/\/xiaochengxu-images-source\.feiersmart\.com\/ - reject
+    - ^https?:\/\/h5-virtual\.feiersmart\.com\/ - reject
