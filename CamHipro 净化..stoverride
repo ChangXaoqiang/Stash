@@ -15,6 +15,7 @@ http:
     - "360buyimg.com"
     - "mobads-pre-config.cdn.bcebos.com"
     - "pgdt.ugdtimg.com"
+    - "adsmind.ugdtimg.com"
 
   url-rewrite:
     - ^https?:\/\/mon\.zijieapi\.com\/ - reject
@@ -27,3 +28,4 @@ http:
     - ^https?:\/\/.+\.360buyimg\.com\/ - reject
     - ^https?:\/\/mobads-pre-config\.cdn\.bcebos\.com\/ - reject
     - ^https?:\/\/pgdt\.ugdtimg\.com\/ - reject
+    - ^https?:\/\/adsmind\.ugdtimg\.com\/ - reject
