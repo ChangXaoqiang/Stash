@@ -1,0 +1,13 @@
+name: e充电 净化
+desc: 最后更新时间：2024-07-01 03:18
+icon: https://pp.myapp.com/ma_icon/0/icon_42284428_1720767893/256
+category: "NoAd"
+
+http:
+  mitm:
+    - "api-evone.echargenet.com"
+    - "api-evone.echargenet.com"
+
+  url-rewrite:
+    - ^https?:\/\/api-evone\.echargenet\.com\/gw\/evone\.echargeapi\.open\.ad\.getadmaterials\/ - reject
+    - ^https?:\/\/api-evone\.echargenet\.com\/gw\/evone\.echargeapi\.open\.ad\.usermaterialsclick\/ - reject
