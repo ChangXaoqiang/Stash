@@ -1,5 +1,5 @@
 name: CamHipro 净化
-desc: 最后更新时间：2024-07-01 03:18
+desc: 最后更新时间：2024-07-28 04:22
 icon: https://play-lh.googleusercontent.com/rvyt5BvmYV-uUPdlYNsy58F-4Ubmaw6xJ9Ys9QSiGj06H9GkciiHe3K3_8iMyhbRDQ=w480-h960-rw
 category: "NoAd"
 
@@ -14,6 +14,7 @@ http:
     - "adashbc.ut.taobao.com"
     - "360buyimg.com"
     - "mobads-pre-config.cdn.bcebos.com"
+    - "pgdt.ugdtimg.com"
 
   url-rewrite:
     - ^https?:\/\/mon\.zijieapi\.com\/ - reject
@@ -25,3 +26,4 @@ http:
     - ^https?:\/\/adashbc\.ut\.taobao\.com\/ - reject
     - ^https?:\/\/.+\.360buyimg\.com\/ - reject
     - ^https?:\/\/mobads-pre-config\.cdn\.bcebos\.com\/ - reject
+    - ^https?:\/\/pgdt\.ugdtimg\.com\/ - reject
