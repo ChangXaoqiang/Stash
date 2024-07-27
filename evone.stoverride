@@ -6,7 +6,6 @@ category: "NoAd"
 http:
   mitm:
     - "api-evone.echargenet.com"
-    - "cdn-evone-oss.echargenet.com"
     - "dfp.cmft.com.cn"
     - "hm.baidu.com"
     - "w.weure.cn"
@@ -27,7 +26,6 @@ http:
     - ^https?:\/\/api-evone\.echargenet\.com\/gw\/evone\.h5gateway\.evoneopenauth\.internal\.queryactivity\/ - reject
     - ^https?:\/\/api-evone\.echargenet\.com\/gw\/evone\.h5gateway\.integral\.plus\.queryplusactivitylist\/ - reject
     - ^https?:\/\/api-evone\.echargenet\.com\/gw\/evone\.appsns\.open\.merchant\.activity\.pagelistapp\/ - reject
-    - ^https?:\/\/cdn-evone-oss\.echargenet\.com\/ - reject
     - ^https?:\/\/dfp\.cmft\.com\.cn\/ - reject
     - ^https?:\/\/hm\.baidu\.com\/ - reject
     - ^https?:\/\/api-evone\.echargenet\.com\/gw\/evone\.h5gateway\.integral\.usersign\.getsignactivityinfo\/ - reject
