@@ -1,0 +1,21 @@
+name: 咪咕视频_净化
+desc: 最后更新时间：2024-07-28 01:52
+icon: https://pp.myapp.com/ma_icon/0/icon_10939789_1721358855/256
+category: "NoAd"
+
+http:
+  mitm:
+    - "ggc.cmvideo.cn"
+    - "public-img.miguvideo.com"
+    - "ggic03.miguvideo.com"
+    - "sdk.e.qq.com"
+    - "common-sc.miguvideo.com"
+    - "ggx03.miguvideo.com"
+
+  url-rewrite:
+    - ^https?:\/\/ggc\.cmvideo\.cn\/v1\/iflyad\/ - reject
+    - ^https?:\/\/public-img\.miguvideo\.com\/publish\/pictures\/ - reject
+    - ^https?:\/\/ggic03\.miguvideo\.com\/ad\/ - reject
+    - ^https?:\/\/sdk\.e\.qq\.com\/ - reject
+    - ^https?:\/\/common-sc\.miguvideo\.com\/ - reject
+    - ^https?:\/\/ggx03\.miguvideo\.com\/ - reject
