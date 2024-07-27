@@ -1,0 +1,13 @@
+name: 12306_净化
+desc: 最后更新时间：2024-07-28 02:36
+icon: https://pp.myapp.com/ma_icon/0/icon_10331030_1715659358/256
+category: "NoAd"
+
+http:
+  mitm:
+    - "ad.12306.cn"
+    - "exservice.12306.cn"
+
+  url-rewrite:
+    - ^https?:\/\/ad\.12306\.cn\/ad\/ - reject
+    - ^https?:\/\/exservice\.12306\.cn\/ - reject
