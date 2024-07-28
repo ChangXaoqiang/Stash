@@ -19,9 +19,9 @@ http:
 
 
   url-rewrite:
-    - ^https?:\/\/api-evone\.echargenet\.com\/gw\/evone\.echargeapi\.open\.ad\.usermaterialsclick\?.*$ - reject-dict
-    - ^https?:\/\/api-evone\.echargenet\.com\/gw\/evone\.echargeapi\.open\.ad\.getadmaterials\?.*$ - reject-dict
-    - "https?:\/\/api-evone\.echargenet\.com\/gw\/evone\.h5gateway\.internal\.registeractivity\.querybyareaid\/ - reject-dict"
+    - ^https?:\/\/api-evone\.echargenet\.com\/gw\/evone\.echargeapi\.open\.ad\.usermaterialsclick\/ - reject-dict
+    - ^https?:\/\/api-evone\.echargenet\.com\/gw\/evone\.echargeapi\.open\.ad\.getadmaterials\/ - reject-dict
+    - ^https?:\/\/api-evone\.echargenet\.com\/gw\/evone\.h5gateway\.internal\.registeractivity\.querybyareaid\/ - reject-dict
     - ^https?:\/\/dfp\.cmft\.com\.cn\/ - reject-dict
     - ^https?:\/\/api\.zysdsk\.cn\/ - reject-dict
     - ^https?:\/\/jf\.yihaoxing888\.com\/ - reject-dict
