@@ -1,5 +1,5 @@
 name: e充电 净化
-desc: 最后更新时间：2024-07-28 05:07
+desc: e充电 净化
 icon: https://pp.myapp.com/ma_icon/0/icon_42284428_1720767893/256
 category: "NoAd"
 
@@ -19,14 +19,14 @@ http:
 
 
   url-rewrite:
-    - ^https?:\/\/api-evone\.echargenet\.com\/gw\/evone\.echargeapi\.open\.ad\.usermaterialsclick\/ - reject-dict
-    - ^https?:\/\/api-evone\.echargenet\.com\/gw\/evone\.echargeapi\.open\.ad\.getadmaterials\/ - reject-dict
-    - ^https?:\/\/api-evone\.echargenet\.com\/gw\/evone\.h5gateway\.internal\.registeractivity\.querybyareaid\/ - reject-dict
-    - ^https?:\/\/dfp\.cmft\.com\.cn\/ - reject-dict
-    - ^https?:\/\/api\.zysdsk\.cn\/ - reject-dict
-    - ^https?:\/\/jf\.yihaoxing888\.com\/ - reject-dict
-    - ^https?:\/\/yxyylog\.echargenet\.com\/ - reject-dict
+    - ^https?:\/\/api-evone\.echargenet\.com\/gw\/evone\.echargeapi\.open\.ad\.usermaterialsclick - reject-dict
+    - ^https?:\/\/api-evone\.echargenet\.com\/gw\/evone\.echargeapi\.open\.ad\.getadmaterials - reject-dict
+    - ^https?:\/\/api-evone\.echargenet\.com\/gw\/evone\.h5gateway\.internal\.registeractivity\.querybyareaid - reject-dict
+    - ^https?:\/\/dfp\.cmft\.com\.cn\/ - reject
+    - ^https?:\/\/api\.zysdsk\.cn\/ - reject
+    - ^https?:\/\/jf\.yihaoxing888\.com\/ - reject
+    - ^https?:\/\/yxyylog\.echargenet\.com\/ - reject
     - ^https?:\/\/res\.wx\.qq\.com\/open\/js\/ - reject-dict
-    - ^https?:\/\/h5-api\.feiersmart\.com\/ - reject-dict
-    - ^https?:\/\/xiaochengxu-images-source\.feiersmart\.com\/ - reject-dict
-    - ^https?:\/\/h5-virtual\.feiersmart\.com\/ - reject-dict
+    - ^https?:\/\/h5-api\.feiersmart\.com\/ - reject
+    - ^https?:\/\/xiaochengxu-images-source\.feiersmart\.com\/ - reject
+    - ^https?:\/\/h5-virtual\.feiersmart\.com\/ - reject
