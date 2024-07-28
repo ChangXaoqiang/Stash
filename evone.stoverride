@@ -7,7 +7,6 @@ http:
   mitm:
     - "api-evone.echargenet.com"
     - "dfp.cmft.com.cn"
-    - "hm.baidu.com"
     - "w.weure.cn"
     - "api.zysdsk.cn"
     - "jf.yihaoxing888.com"
@@ -20,20 +19,14 @@ http:
 
 
   url-rewrite:
-    - ^https?:\/\/api-evone\.echargenet\.com\/gw\/evone\.echargeapi\.open\.ad\.getadmaterials\/ - reject
-    - ^https?:\/\/api-evone\.echargenet\.com\/gw\/evone\.echargeapi\.open\.ad\.usermaterialsclick\/ - reject
-    - ^https?:\/\/api-evone\.echargenet\.com\/gw\/evone\.h5gateway\.internal\.registeractivity\.querybyareaid\/ - reject
-    - ^https?:\/\/api-evone\.echargenet\.com\/gw\/evone\.h5gateway\.evoneopenauth\.internal\.queryactivity\/ - reject
-    - ^https?:\/\/api-evone\.echargenet\.com\/gw\/evone\.h5gateway\.integral\.plus\.queryplusactivitylist\/ - reject
-    - ^https?:\/\/api-evone\.echargenet\.com\/gw\/evone\.appsns\.open\.merchant\.activity\.pagelistapp\/ - reject
-    - ^https?:\/\/dfp\.cmft\.com\.cn\/ - reject
-    - ^https?:\/\/hm\.baidu\.com\/ - reject
-    - ^https?:\/\/w\.weure\.cn\/ - reject
-    - ^https?:\/\/api\.zysdsk\.cn\/ - reject
-    - ^https?:\/\/jf\.yihaoxing888\.com\/ - reject
-    - ^https?:\/\/applite-evone-wx\.echargenet\.com\/ - reject
-    - ^https?:\/\/yxyylog\.echargenet\.com\/ - reject
-    - ^https?:\/\/res\.wx\.qq\.com\/open\/js\/ - reject
-    - ^https?:\/\/h5-api\.feiersmart\.com\/ - reject
-    - ^https?:\/\/xiaochengxu-images-source\.feiersmart\.com\/ - reject
-    - ^https?:\/\/h5-virtual\.feiersmart\.com\/ - reject
+    - ^https?:\/\/api-evone\.echargenet\.com\/gw\/evone\.echargeapi\.open\.ad\.usermaterialsclick\?.*$ - reject-dict
+    - ^https?:\/\/api-evone\.echargenet\.com\/gw\/evone\.echargeapi\.open\.ad\.getadmaterials\?.*$ - reject-dict
+    - "https?:\/\/api-evone\.echargenet\.com\/gw\/evone\.h5gateway\.internal\.registeractivity\.querybyareaid\/ - reject-dict"
+    - ^https?:\/\/dfp\.cmft\.com\.cn\/ - reject-dict
+    - ^https?:\/\/api\.zysdsk\.cn\/ - reject-dict
+    - ^https?:\/\/jf\.yihaoxing888\.com\/ - reject-dict
+    - ^https?:\/\/yxyylog\.echargenet\.com\/ - reject-dict
+    - ^https?:\/\/res\.wx\.qq\.com\/open\/js\/ - reject-dict
+    - ^https?:\/\/h5-api\.feiersmart\.com\/ - reject-dict
+    - ^https?:\/\/xiaochengxu-images-source\.feiersmart\.com\/ - reject-dict
+    - ^https?:\/\/h5-virtual\.feiersmart\.com\/ - reject-dict
