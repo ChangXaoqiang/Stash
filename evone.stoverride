@@ -11,6 +11,5 @@ http:
     - "cdn-evone-oss.echargenet.com"
 
   url-rewrite:
-    - ^https?:\/\/api-evone\.echargenet\.com\/gw\/evone\.echargeapi\.open\.ad\.getadmaterials\/ - reject-dict
-    - ^https?:\/\/cdn-evone\.oss-cn-beijing\.aliyuncs\.com\/cms_img\/ - reject-dict
-    - ^http?:\/\/cdn-evone-oss\.echargenet\.com\/resource\/activity\/ - reject-dict
+    - ^https?:\/\/api-evone\.echargenet\.com\/gw\/evone\.echargeapi\.open\.ad\.getadmaterials\/ - reject
+    - ^https?:\/\/cdn-evone\.oss-cn-beijing\.aliyuncs\.com\/cms_img\/ - reject
