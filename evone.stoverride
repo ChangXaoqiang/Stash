@@ -1,0 +1,18 @@
+name: e充电_净化
+desc: e充电去广告
+icon: https://pp.myapp.com/ma_icon/0/icon_42284428_1720767893/256
+category: "NoAd"
+
+http:
+  mitm:
+    - "yxyylog.echargenet.com"
+    - "api-evone.echargenet.com"
+    - "cdn-evone.oss-cn-beijing.aliyuncs.com"
+    - "cdn-evone-oss.echargenet.com"
+
+  url-rewrite:
+    - ^https?:\/\/yxyylog\.echargenet\.com\/ - reject
+    - ^https?:\/\/api-evone\.echargenet\.com\/gw\/evone\.echargeapi\.open\.ad\.getadmaterials\/ - reject
+    - ^https?:\/\/cdn-evone\.oss-cn-beijing\.aliyuncs\.com\/cms_img\/ - reject
+    - ^http?:\/\/cdn-evone-oss\.echargenet\.com\/resource\/activity\/ - reject
+    - ^http?:\/\/cdn-evone-oss\.echargenet\.com\/evone-materialpic\/ - reject
