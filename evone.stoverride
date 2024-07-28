@@ -11,5 +11,13 @@ http:
     - "cdn-evone-oss.echargenet.com"
 
   url-rewrite:
-    - ^https?:\/\/api-evone\.echargenet\.com\/gw\/evone\.echargeapi\.open\.ad\.getadmaterials\/ - reject
-    - ^https?:\/\/cdn-evone\.oss-cn-beijing\.aliyuncs\.com\/cms_img\/ - reject
+    - ^https?:\/\/cdn-evone\.oss-cn-beijing\.aliyuncs\.com\/cms_img\/171487559706\.png - reject
+    - ^https?:\/\/cdn-evone\.oss-cn-beijing\.aliyuncs\.com\/cms_img\/*\.jpg - reject
+    - ^https?:\/\/cdn-evone\.oss-cn-beijing\.aliyuncs\.com\/cms_img\/1702692367539\.jpeg - reject
+    - ^https?:\/\/cdn-evone\.oss-cn-beijing\.aliyuncs\.com\/cms_img\/*\.jpeg - reject
+    - ^http?:\/\/cdn-evone-oss\.echargenet\.com\/evone-materialpic\/1721695147343-%E7%94%B5%E8%AF%9D%E5%8D%A1\.png - reject
+    - ^http?:\/\/cdn-evone-oss\.echargenet\.com\/evone-materialpic\/*\.png - reject
+    - ^http?:\/\/cdn-evone-oss\.echargenet\.com\/evone-materialpic\/1721614030801-%E7%BB%91%E8%BD%A6-banner-2%E5%85%83\.png - reject
+    - ^http?:\/\/cdn-evone-oss\.echargenet\.com\/evone-materialpic\/*\.png - reject
+    - ^http?:\/\/cdn-evone-oss\.echargenet\.com\/evone-materialpic\/1721613987421-%E7%A7%BB%E5%8A%A8%E7%A7%AF%E5%88%86%E5%85%91%E6%8D%A2banner%E6%9D%A1\.jpg - reject
+    - ^http?:\/\/cdn-evone-oss\.echargenet\.com\/evone-materialpic\/*\.jpg - reject
