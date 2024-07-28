@@ -28,7 +28,6 @@ http:
     - ^https?:\/\/api-evone\.echargenet\.com\/gw\/evone\.appsns\.open\.merchant\.activity\.pagelistapp\/ - reject
     - ^https?:\/\/dfp\.cmft\.com\.cn\/ - reject
     - ^https?:\/\/hm\.baidu\.com\/ - reject
-    - ^https?:\/\/api-evone\.echargenet\.com\/gw\/evone\.h5gateway\.integral\.usersign\.getsignactivityinfo\/ - reject
     - ^https?:\/\/w\.weure\.cn\/ - reject
     - ^https?:\/\/api\.zysdsk\.cn\/ - reject
     - ^https?:\/\/jf\.yihaoxing888\.com\/ - reject
