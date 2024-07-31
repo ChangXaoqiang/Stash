@@ -13,6 +13,4 @@ http:
   url-rewrite:
     - ^https?:\/\/cdn-evone\.oss-cn-beijing\.aliyuncs\.com\/cms_img\/171487559706.png - reject-dict
     - ^https?:\/\/cdn-evone\.oss-cn-beijing\.aliyuncs\.com\/cms_img\/1702692367539.jpeg - reject-dict
-    - ^http?:\/\/cdn-evone-oss\.echargenet\.com\/evone-materialpic\/1721695147343-%E7%94%B5%E8%AF%9D%E5%8D%A1.png - reject-dict
-    - ^http?:\/\/cdn-evone-oss\.echargenet\.com\/evone-materialpic\/1721614030801-%E7%BB%91%E8%BD%A6-banner-2%E5%85%83.png - reject-dict
-    - ^http?:\/\/cdn-evone-oss\.echargenet\.com\/evone-materialpic\/1721613987421-%E7%A7%BB%E5%8A%A8%E7%A7%AF%E5%88%86%E5%85%91%E6%8D%A2banner%E6%9D%A1.jpg - reject-dict
+    - ^http?:\/\/cdn-evone-oss\.echargenet\.com\/evone-materialpic\/ - reject-dict
