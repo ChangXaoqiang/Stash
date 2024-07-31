@@ -5,12 +5,10 @@ category: "NoAd"
 
 http:
   mitm:
-    - "yxyylog.echargenet.com"
-    - "api-evone.echargenet.com"
     - "cdn-evone.oss-cn-beijing.aliyuncs.com"
     - "cdn-evone-oss.echargenet.com"
 
   url-rewrite:
-    - ^https?:\/\/cdn-evone\.oss-cn-beijing\.aliyuncs\.com\/cms_img\/171487559706.png - reject-dict
-    - ^https?:\/\/cdn-evone\.oss-cn-beijing\.aliyuncs\.com\/cms_img\/1702692367539.jpeg - reject-dict
+    - ^https?:\/\/cdn-evone\.oss-cn-beijing\.aliyuncs\.com\/cms_img\/171487559706.png - reject
+    - ^https?:\/\/cdn-evone\.oss-cn-beijing\.aliyuncs\.com\/cms_img\/1702692367539.jpeg - reject
     - ^http?:\/\/cdn-evone-oss\.echargenet\.com\/evone-materialpic\/ - reject-dict
