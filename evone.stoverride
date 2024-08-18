@@ -8,9 +8,22 @@ http:
     - "cdn-evone.oss-cn-beijing.aliyuncs.com"
     - "cdn-evone-oss.echargenet.com"
     - "api.zysdsk.cn"
+    - "api-evone.echargenet.com"
+    - "xiaochengxu-images-source.feiersmart.com"
+    - "hm.baidu.com"
+    - "eshop-images-source.feiersmart.com"
+    - "jf.yihaoxing888.com"
+    - "dfp.cmft.com.cn"
 
   url-rewrite:
     - ^https?:\/\/cdn-evone\.oss-cn-beijing\.aliyuncs\.com\/cms_img\/ - reject
     - ^https?:\/\/cdn-evone\.oss-cn-beijing\.aliyuncs\.com\/cms_img\/ - reject
     - ^http?:\/\/cdn-evone-oss\.echargenet\.com\/evone-materialpic\/ - reject
-    - ^http?:\/\/api\.zysdsk\.cn\/ - reject
+    - ^https?:\/\/api\.zysdsk\.cn\/ - reject
+    - ^https?:\/\/api-evone\.echargenet\.com\/gw\/evone\.echargeapi\.open\.ad\.usermaterialsclick\/ - reject
+    - ^https?:\/\/xiaochengxu-images-source\.feiersmart\.com\/ - reject
+    - ^https?:\/\/hm\.baidu\.com\/ - reject
+    - ^https?:\/\/eshop-images-source\.feiersmart\.com\/ - reject
+    - ^https?:\/\/jf\.yihaoxing888\.com\/ - reject
+    - ^https?:\/\/dfp\.cmft\.com\.cn\/ - reject
+    - ^https?:\/\/api-evone\.echargenet\.com\/gw\/evone\.h5gateway\.internal\.registeractivity\.querybyareaid\/ - reject
