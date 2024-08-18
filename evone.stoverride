@@ -13,7 +13,6 @@ http:
     - "hm.baidu.com"
     - "eshop-images-source.feiersmart.com"
     - "jf.yihaoxing888.com"
-    - "dfp.cmft.com.cn"
 
   url-rewrite:
     - ^https?:\/\/cdn-evone\.oss-cn-beijing\.aliyuncs\.com\/cms_img\/ - reject
@@ -25,4 +24,3 @@ http:
     - ^https?:\/\/hm\.baidu\.com\/ - reject
     - ^https?:\/\/eshop-images-source\.feiersmart\.com\/ - reject
     - ^https?:\/\/jf\.yihaoxing888\.com\/ - reject
-    - ^https?:\/\/dfp\.cmft\.com\.cn\/ - reject-200
