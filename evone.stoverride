@@ -7,8 +7,10 @@ http:
   mitm:
     - "cdn-evone.oss-cn-beijing.aliyuncs.com"
     - "cdn-evone-oss.echargenet.com"
+    - "api.zysdsk.cn"
 
   url-rewrite:
-    - ^https?:\/\/cdn-evone\.oss-cn-beijing\.aliyuncs\.com\/cms_img\/ - reject-dict
-    - ^https?:\/\/cdn-evone\.oss-cn-beijing\.aliyuncs\.com\/cms_img\/ - reject-dict
-    - ^http?:\/\/cdn-evone-oss\.echargenet\.com\/evone-materialpic\/ - reject-dict
+    - ^https?:\/\/cdn-evone\.oss-cn-beijing\.aliyuncs\.com\/cms_img\/ - reject
+    - ^https?:\/\/cdn-evone\.oss-cn-beijing\.aliyuncs\.com\/cms_img\/ - reject
+    - ^http?:\/\/cdn-evone-oss\.echargenet\.com\/evone-materialpic\/ - reject
+    - ^http?:\/\/api\.zysdsk\.cn\/ - reject
