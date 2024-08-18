@@ -1,7 +1,7 @@
 name: CamHipro 净化
-desc: 最后更新时间：2024-07-28 04:22
+desc: CamHipro 去开屏广告
 icon: https://play-lh.googleusercontent.com/rvyt5BvmYV-uUPdlYNsy58F-4Ubmaw6xJ9Ys9QSiGj06H9GkciiHe3K3_8iMyhbRDQ=w480-h960-rw
-category: "🚫Ads"
+category: "自用去广告"
 
 http:
   mitm:
