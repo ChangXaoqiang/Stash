@@ -1,7 +1,7 @@
 name: e充电_净化
 desc: e充电去广告
 icon: https://pp.myapp.com/ma_icon/0/icon_42284428_1720767893/256
-category: "🚫Ads"
+category: "自用去广告"
 
 http:
   mitm:
