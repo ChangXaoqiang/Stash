@@ -22,5 +22,3 @@ http:
     - ^https?:\/\/api-evone\.echargenet\.com\/gw\/evone\.echargeapi\.open\.ad\.usermaterialsclick\/ - reject
     - ^https?:\/\/xiaochengxu-images-source\.feiersmart\.com\/ - reject
     - ^https?:\/\/hm\.baidu\.com\/ - reject
-    - ^https?:\/\/eshop-images-source\.feiersmart\.com\/ - reject
-    - ^https?:\/\/jf\.yihaoxing888\.com\/ - reject
