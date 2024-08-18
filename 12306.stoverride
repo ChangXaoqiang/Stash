@@ -1,7 +1,7 @@
 name: 12306_净化
 desc: 12306净化插件
 icon: https://pp.myapp.com/ma_icon/0/icon_10331030_1715659358/256
-category: "🚫Ads"
+category: "自用去广告"
 
 http:
   mitm:
