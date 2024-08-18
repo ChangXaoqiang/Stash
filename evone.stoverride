@@ -12,7 +12,6 @@ http:
 
   url-rewrite:
     - ^https?:\/\/cdn-evone\.oss-cn-beijing\.aliyuncs\.com\/cms_img\/ - reject
-    - ^https?:\/\/cdn-evone\.oss-cn-beijing\.aliyuncs\.com\/cms_img\/ - reject
     - ^http?:\/\/cdn-evone-oss\.echargenet\.com\/evone-materialpic\/ - reject
     - ^https?:\/\/api\.zysdsk\.cn\/ - reject
     - ^https?:\/\/api-evone\.echargenet\.com\/gw\/evone\.echargeapi\.open\.ad\.usermaterialsclick\/ - reject
