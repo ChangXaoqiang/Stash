@@ -25,4 +25,4 @@ http:
     - ^https?:\/\/hm\.baidu\.com\/ - reject
     - ^https?:\/\/eshop-images-source\.feiersmart\.com\/ - reject
     - ^https?:\/\/jf\.yihaoxing888\.com\/ - reject
-    - ^https?:\/\/dfp\.cmft\.com\.cn\/ - reject
+    - ^https?:\/\/dfp\.cmft\.com\.cn\/ - reject-200
