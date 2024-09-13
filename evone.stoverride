@@ -7,7 +7,11 @@ http:
   mitm:
     - "cdn-evone.oss-cn-beijing.aliyuncs.com"
     - "cdn-evone-oss.echargenet.com"
+    - "api-evone.echargenet.com"
 
   url-rewrite:
-    - ^https?:\/\/cdn-evone\.oss-cn-beijing\.aliyuncs\.com\/cms_img\/ - reject-200
-    - ^http?:\/\/cdn-evone-oss\.echargenet\.com\/evone-materialpic\/ - reject-200
+    - ^https?:\/\/cdn-evone\.oss-cn-beijing\.aliyuncs\.com\/cms_img\/171487559706.png - reject
+    - ^https?:\/\/cdn-evone\.oss-cn-beijing\.aliyuncs\.com\/cms_img\/1702692367539.jpeg - reject
+    - ^http?:\/\/cdn-evone-oss\.echargenet\.com\/evone-materialpic\/ - reject
+    - ^https?:\/\/api-evone\.echargenet\.com\/gw\/evone\.echargeapi\.open\.ad\.getadmaterials\/ - reject
+    - ^https?:\/\/api-evone\.echargenet\.com\/gw\/evone\.echargeapi\.external\.user\.newbalance\/ - reject
