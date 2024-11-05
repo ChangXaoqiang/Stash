@@ -14,4 +14,4 @@ http:
     - ^https?:\/\/cdn-evone\.oss-cn-beijing\.aliyuncs\.com\/cms_img\/1702692367539.jpeg - reject
     - ^http?:\/\/cdn-evone-oss\.echargenet\.com\/evone-materialpic\/ - reject
     - ^https?:\/\/api-evone\.echargenet\.com\/gw\/evone\.echargeapi\.open\.ad\.getadmaterials\/ - reject
-    - ^https?:\/\/api-evone\.echargenet\.com\/gw\/evone\.echargeapi\.external\.user\.newbalance\/ - reject
+    #- ^https?:\/\/api-evone\.echargenet\.com\/gw\/evone\.echargeapi\.external\.user\.newbalance\/ - reject
